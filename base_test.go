@@ -263,7 +263,7 @@ func TestSharedConnReferenceCount(t *testing.T) {
 
 	c = baseConnMap[addr.String()]
 	if c != nil {
-		t.Errorf("baseConn should be released", c.ref)
+		t.Errorf("baseConn should be released: %v", c.ref)
 	}
 }
 
